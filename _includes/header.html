@@ -14,7 +14,7 @@
 	<ul class="actions vertical">
 		{% for page in site.pages %}
 		    {% if page.layout == "home" %}
-		        <li><a href="{{ "" | absolute_url }}/" class="button special fit">{{ page.title }}</a></li>
+		        <li><a href="{{ "" | absolute_url }}" class="button special fit">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 	</ul>
@@ -28,7 +28,7 @@
 	<ul class="actions vertical">
 		{% for page in site.pages %}
 		    {% if page.layout == "about" %}
-		        <li><a href="{{ "" | absolute_url }}/" class="button fit">{{ page.title }}</a></li>
+		        <li><a href="{{ page.url | absolute_url }}" class="button fit">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 	</ul>
