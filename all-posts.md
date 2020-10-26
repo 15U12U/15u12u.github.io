@@ -3,6 +3,7 @@ layout: allposts
 title: All Posts
 description: null
 nav-menu: true
+show_tile: false
 ---
 
 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
