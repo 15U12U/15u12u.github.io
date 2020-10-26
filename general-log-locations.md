@@ -5,18 +5,80 @@ description: A collection of common log locations in different systems and appli
 nav-menu: true
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+## System
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. 
-Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. 
-Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. 
-Pellentesque aliquam maximus risus, vel sed vehicula.
+### Windows
+```
+C:\
+   |
+   +-- Windows\
+               |
+               +-- System32\
+                            |
+                            +-- winevt\
+                                       |
+                                       +-- Logs\
+                                                |
+                                                +-- Security.evtx
+                                                +-- Application.evtx
+                                                +-- System.evtx
+                                                +-- Windows Powershell.evtx
+                                                +-- Microsoft-Windows-PowerShell%4Operational.evtx
+                                                +-- Microsoft-Windows-Sysmon%4Operational.evtx
+```
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. 
-Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+
+### Linux / Unix
+```
+/
+ |
+ +-- var/
+         |
+         +-- log/
+         |       |
+         |       +-- messages
+         |       +-- syslog
+         |       +-- kern.log
+         |       +-- cron
+         |       +-- dmesg
+         |       +-- boot.log
+         |       +-- maillog
+         |       +-- mail.log
+         |       +-- user.log
+         |       +-- cups
+         |       +-- daemon.log
+         |       +-- anaconda.log
+         |       +-- auth.log
+         |       +-- secure
+         |       +-- sulog
+         |       +-- dpkg.log
+         |       +-- yum.log
+         |       +-- wtmp (binary file)
+         |       +-- btmp (binary file)
+         |       +-- faillog (binary file)
+         |       +-- lastlog (binary file)
+         |       +-- apt/
+         |       |       |
+         |       |       +-- history.log
+         |       |       +-- term.log
+         |       |
+         |       +-- audit/
+         |                 |
+         |                 +--audit.log
+         |
+         +-- audit/ (binary files)
+         |
+         +-- adm/ 
+         |       | 
+         |       +-- messages
+         |       +-- secure
+         |       +-- wtmpx
+         |       +-- sulog
+         |
+         +-- run/
+                 |
+                 +-- utmp (binary file)
+```
+<code>
+sdfsdgsdgasdg
+</code>
