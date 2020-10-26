@@ -1,0 +1,48 @@
+# site settings
+title: 15U12U
+subtitle: Isuru Tharanga
+email: 15u12u@protonmail.com
+description: 
+baseurl: "15u12u" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address: 
+city: 
+state: 
+zip_code: 
+country: 
+phone: 
+
+
+# default settings
+defaults:
+  - scope:
+      path: posts
+      type: posts
+    values:
+      layout: post
+
+
+# home page setiings
+tiles-source: pages
+tiles-count: 6
+
+
+# social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/15u12u
+gitlab_url: https://gitlab.com/15u12u
+googleplus_url: 
+instagram_url: 
+linkedin_url: https://www.linkedin.com/15u12u
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/15u12u
+email_id: mailto:15u12u@protonmail.com
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
