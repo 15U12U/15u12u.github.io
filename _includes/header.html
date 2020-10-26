@@ -11,20 +11,25 @@
 
 <!-- Menu -->
 <nav id="menu">
-	<ul class="links">
-        {% for page in site.pages %}
+	<ul class="actions vertical">
+		{% for page in site.pages %}
 		    {% if page.layout == "home" %}
 		        <li><a href="{{ "" | absolute_url }}/" class="button special fit">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
+	</ul>
+	<ul class="links">
 		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
+		    {% if page.layout != "home" and page.layout != "about" and page.nav-menu == true %}
 		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
 	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
+		{% for page in site.pages %}
+		    {% if page.layout == "about" %}
+		        <li><a href="{{ "" | absolute_url }}/" class="button fit">{{ page.title }}</a></li>
+	    	{% endif %}
+		{% endfor %}
 	</ul>
 </nav>
